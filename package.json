@@ -1,0 +1,27 @@
+{
+  "name": "webapp-bot",
+  "version": "1.0.0",
+  "description": "A simple web app bot",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "build-css": "sass src/styles/scss/styles.scss src/styles/css/styles.css --style compressed",
+    "format": "prettier --write .",
+    "start": "npm run compile-scss -- --watch & live-server ./src --port=8080",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-scss": "sass src/styles/scss/styles.scss src/styles/css/styles.css --watch",
+    "predeploy": "npm run build-css",
+    "deploy": "gh-pages -d src",
+    "homepage": "https://venher-v.github.io/webApp-bot/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "http-server": "^14.1.1",
+    "open": "^10.1.0",
+    "sass": "^1.86.3",
+    "prettier": "^2.6.2",
+    "live-server": "^1.2.1"
+  }
+}

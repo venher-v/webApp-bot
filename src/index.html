@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,75..100;1,75..100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" method="post" class="form">
+        <div class="form__field">
+          <label class="form__field-label" for="first-name">Ім'я</label>
+          <input
+            class="form__field-input"
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="Ім'я"
+            required
+          />
+        </div>
+
+        <div class="form__field">
+          <label class="form__field-label" for="last-name">Прізвище</label>
+          <input
+            class="form__field-input"
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Прізвище"
+            required
+          />
+        </div>
+
+        <div class="form__field">
+          <label class="form__field-label" for="email">Email</label>
+          <input
+            class="form__field-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@simple.com"
+            required
+          />
+        </div>
+
+        <div class="form__field">
+          <label class="form__field-label" for="phone">Номер телефону</label>
+          <input
+            class="form__field-input"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="380111111111"
+            pattern="[0-9]{12}"
+            required
+          />
+        </div>
+
+        <div class="form__field form__field-radio">
+          <label class="form__field-label">Чи підписуєтесь на розсилку?</label>
+          <label class="radio">
+            <input type="radio" name="newsletter" value="yes" required />
+            Так
+          </label>
+          <label class="radio">
+            <input type="radio" name="newsletter" value="no" required /> Ні
+          </label>
+        </div>
+
+        <div class="form__field form__field-checkbox">
+          <label class="form__field-label">Вибір виду заняття</label>
+          <label class="checkbox">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              name="class-type"
+              value="group"
+            />
+            Групові заняття
+          </label>
+          <label class="checkbox">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              name="class-type"
+              value="individual"
+            />
+            Індивідуальні заняття
+          </label>
+        </div>
+
+        <div class="form__field form__field-radio">
+          <label class="form__field-label">Чи сталий графік тренувань?</label>
+          <label class="radio">
+            <input
+              class="form__field-input"
+              type="radio"
+              name="schedule"
+              value="fixed"
+              required
+            />
+            Сталий графік (наприклад, вівторок, четверг кожного тижня)
+          </label>
+          <label class="radio">
+            <input
+              class="form__field-input"
+              type="radio"
+              name="schedule"
+              value="random"
+              required
+            />
+            Рандомні дні (коли вийде)
+          </label>
+        </div>
+
+        <div class="form__buttons">
+          <button class="button" type="submit">Відправити</button>
+          <button class="button is-light" type="reset">Скасувати</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
