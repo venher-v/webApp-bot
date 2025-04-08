@@ -1,21 +1,12 @@
-:root {
-  --tg-theme-bg-color: #ffffff;
-  --tg-theme-text-color: #000000;
-  --tg-theme-hint-color: #838383;
-  --tg-theme-button-color: #8DDBAB;
-  --tg-theme-button-text-color: #000000;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: 100%;
-  all: unset;
+  // all: unset;
 }
 
-html, body {
-  background-color: var(--tg-theme-bg-color);
+html{
   font-family: Roboto, sans-serif;
   font-size: 20px;
   line-height: 120%;
